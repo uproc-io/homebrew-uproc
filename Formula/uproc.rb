@@ -1,7 +1,7 @@
 class Uproc < Formula
   desc "Uproc CLI"
   homepage "https://github.com/uproc-io/uproc.cli"
-  version "0.1.1"
+  version "0.1.3"
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/uproc-io/uproc.cli/releases/download/v#{version}/uproc.cli_#{version}_darwin_arm64.tar.gz"
