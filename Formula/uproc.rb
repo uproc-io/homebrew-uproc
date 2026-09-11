@@ -1,20 +1,20 @@
 class Uproc < Formula
   desc "Uproc CLI"
   homepage "https://github.com/uproc-io/uproc.cli"
-  version "0.1.7"
+  version "0.2.1"
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/uproc-io/uproc.cli/releases/download/v#{version}/uproc.cli_#{version}_darwin_arm64.tar.gz"
-    sha256 "e4f2c2e5a104c87c173c8badf953355ef33521e221f1a9d9a919b1f3a8c1c65a"
+    sha256 "2bf7fa52d6115f588ea8dd0a7d39a143b8e97eb69b0ad13ea4c4ccb8c92233c0"
   elsif OS.mac? && Hardware::CPU.intel?
     url "https://github.com/uproc-io/uproc.cli/releases/download/v#{version}/uproc.cli_#{version}_darwin_amd64.tar.gz"
-    sha256 "900015072a415ac9bcd5d9c1bba5349f3d5973cf74be9a039b26173e655c0d05"
+    sha256 "b8e6082d9c163dddfb7bf17907ae86a87f2e3fd8890c22f59d5b0beb569a9460"
   elsif OS.linux? && Hardware::CPU.intel?
     url "https://github.com/uproc-io/uproc.cli/releases/download/v#{version}/uproc.cli_#{version}_linux_amd64.tar.gz"
-    sha256 "a4814779539b5f15226f2f6e69f48531be71d21d437177016d8de7e40e99a2af"
+    sha256 "0843a90264c42740133b6e758d3585f7cde99da108dee734d8abb2be04d10446"
   elsif OS.linux? && Hardware::CPU.arm?
     url "https://github.com/uproc-io/uproc.cli/releases/download/v#{version}/uproc.cli_#{version}_linux_arm64.tar.gz"
-    sha256 "d8433fa627dd8d26a92e757f1f162cf2b89a572019c7ca258eff1fde303cc2b2"
+    sha256 "2a3a1c0020bfb33c8d5eb531ed3a9d7de912c78139209ec777e8d4bdf6e615d4"
   end
 
   def install
