@@ -5,20 +5,20 @@
 class Uproc < Formula
   desc "Uproc CLI"
   homepage "https://github.com/uproc-io/uproc-cli"
-  version "0.2.2"
+  version "0.2.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/uproc-io/uproc-cli/releases/download/v0.2.2/uproc.cli_0.2.2_darwin_amd64.tar.gz"
-      sha256 "22bd30b4ce1604166c3853e305610ed35d98adc49bbb7655b08b920ede9eff85"
+      url "https://github.com/uproc-io/uproc-cli/releases/download/v0.2.3/uproc.cli_0.2.3_darwin_amd64.tar.gz"
+      sha256 "f54a2e44547c6fc5582fbf3ec6ea60561ac94494338d4ba3ef44d61179515e94"
 
       define_method(:install) do
         bin.install "uproc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/uproc-io/uproc-cli/releases/download/v0.2.2/uproc.cli_0.2.2_darwin_arm64.tar.gz"
-      sha256 "3b98eb934191a752aaa675d50e3a4c3eba2a484eef842b466c0ec2e97acc657a"
+      url "https://github.com/uproc-io/uproc-cli/releases/download/v0.2.3/uproc.cli_0.2.3_darwin_arm64.tar.gz"
+      sha256 "bbf91b11f958502b553a5674bee488bd2ad6f3e9e90098b7a11460ac2e59594e"
 
       define_method(:install) do
         bin.install "uproc"
@@ -28,15 +28,15 @@ class Uproc < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/uproc-io/uproc-cli/releases/download/v0.2.2/uproc.cli_0.2.2_linux_amd64.tar.gz"
-      sha256 "b9a1073a5f249ea47dd6f8e17e1107c955083d85aef4f84327159d5cfbdb0490"
+      url "https://github.com/uproc-io/uproc-cli/releases/download/v0.2.3/uproc.cli_0.2.3_linux_amd64.tar.gz"
+      sha256 "f60a1515d47620a626f12111931f6cadc14920e08280707dab564342d6c8af8a"
       define_method(:install) do
         bin.install "uproc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/uproc-io/uproc-cli/releases/download/v0.2.2/uproc.cli_0.2.2_linux_arm64.tar.gz"
-      sha256 "0411c1d0d1a9a68d5f63fe9c621d20745a8e203baeac5c117f403e610b2d601e"
+      url "https://github.com/uproc-io/uproc-cli/releases/download/v0.2.3/uproc.cli_0.2.3_linux_arm64.tar.gz"
+      sha256 "97eb1b56acbeb2b2ee7766a00de9f724690456ce72d94514db36744cfeae75e0"
       define_method(:install) do
         bin.install "uproc"
       end
